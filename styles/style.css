@@ -92,6 +92,7 @@ a {
   font-weight: 400;
   font-size: 1rem;
   
+  
 }
 
 .pre-title::before {
@@ -112,13 +113,14 @@ a {
   /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
-  padding-top: 0px;
+  padding: 48px;
 }
 
 /* --- Logo and Navigation Menu --- */
 .nav {
   display: flex;
   position: fixed;
+  height: 50px;
   top: 0;
   left: 0;
   width: 100%;
@@ -186,6 +188,11 @@ nav ul {
   align-items: center;
 }
 
+.hero-left {
+  margin: 10px auto;
+  padding-bottom: 0;
+}
+
 .hero-name {
   font-size:5rem;
   font-weight: 700;
@@ -209,7 +216,7 @@ nav ul {
 
 /* Education Section */
 #education {
-  background-color: var(--secondaryBackgroundColor);
+  /* background-color: var(--secondaryBackgroundColor); */
   padding: var(--sectionPadding);
 }
 
@@ -378,7 +385,7 @@ nav ul {
 
 /* Contact Section */
 #contact {
-  padding: var(--sectionPadding);
+    padding: 2rem;
 }
 
 .contact {
@@ -476,7 +483,7 @@ footer {
   width: 100%;
   background: #fff; 
   text-align: center;
-  padding: 10px 0; 
+  padding: 20px 0; 
 }
 
 .footer-icons {
@@ -611,6 +618,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.paragraph{
+  padding-top: 5px;
+}
+
 
 @media (max-width: 1367px) {
   .main-container {
@@ -662,9 +673,21 @@ footer {
 
   .education{
     width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .portfolio{
     width : auto;
+  }
+
+  .portfolios {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .skills {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .skill {
