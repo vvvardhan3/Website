@@ -476,12 +476,20 @@ footer {
   width: 100%;
   background: #fff; 
   text-align: center;
-  padding: 5px 0; 
+  padding: 10px 0; 
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 7px; /* Adjust gap between icons */
+  align-items: center;
 }
 
 
 .footer-icons a {
   margin: 0 0.5rem;
+  display: inline-block;
 }
 
 .footer-icons svg {
@@ -703,10 +711,3 @@ footer {
   }
 
 }
-
-
-
-
-
-
-
