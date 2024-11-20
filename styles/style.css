@@ -367,7 +367,7 @@ nav ul {
 .skills-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   color: var(--primaryTextColor);
 }
 
@@ -473,14 +473,12 @@ nav ul {
 
 /* Footer Section */
 footer {
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
   width: 100%;
   background: #fff; 
   text-align: center;
   padding: 5px 0; 
 }
+
 
 .footer-icons a {
   margin: 0 0.5rem;
@@ -603,7 +601,6 @@ footer {
   height: auto;
   margin-bottom: 10px;
 }
-
 
 
 @media (max-width: 1367px) {
