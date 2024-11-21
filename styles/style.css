@@ -273,6 +273,7 @@ nav ul {
   border-radius: var(--itemBorderRadius);
   overflow: hidden; 
   border: 1px solid var(--borderColor);
+  box-shadow: 2.5px 2.5px rgb(158, 147, 147);
 }
 
 .portfolio-cover {
@@ -287,6 +288,7 @@ nav ul {
 
 .portfolio-info {
   padding: 2rem 1.5rem;
+  
 }
 
 .portfolio-title {
@@ -531,6 +533,7 @@ footer {
   transition: 0.2s ease-in-out;
   border-radius: 16px;
   cursor: pointer;
+ 
 }
 
 .btn-r:hover {
