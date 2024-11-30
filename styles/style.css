@@ -280,6 +280,10 @@ nav ul {
   height: auto; 
 }
 
+.github-chart{
+  padding-top: 1rem;
+}
+
 .portfolio {
   border: 1px solid #ddd;
   border-radius: 8px;
