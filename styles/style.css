@@ -178,7 +178,7 @@ nav ul {
 
 .hero-left {
   margin: 10px auto;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .hero-name {
@@ -202,9 +202,12 @@ nav ul {
   justify-content: center;
 }
 
-
-#education {
-  padding: 1rem 0;
+.education {
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: center;
+  background: var(--primaryBackgroundColor);
+  border-radius: var(--itemBorderRadius);
 }
 
 .education .pre-title {
@@ -216,12 +219,16 @@ nav ul {
   margin: 0.5rem 0 1rem;
 }
 
-.education {
-  padding: 1rem 2rem;
-  text-align: center;
-  background: var(--primaryBackgroundColor);
-  border-radius: var(--itemBorderRadius);
+.edu-logo {
+  width: 125px; 
+  height: auto; 
+  margin-right: 10px; 
+  vertical-align: middle;
+  border: 2px solid rgb(160, 157, 157);
+  border-radius: 5px;
+  padding: 2px;
 }
+
 
 
 .education-icon {
@@ -252,112 +259,210 @@ nav ul {
   text-align: left;
 }
 
+/* Portfolio */
 
-#portfolios {
+/* #portfolios {
   padding: 1rem 0;
-}
+} */
 
-.portfolio {
+/* .portfolio {
+  width: auto;
   border-radius: var(--itemBorderRadius);
   overflow: hidden; 
   border: 1px solid var(--borderColor);
   box-shadow: 2.5px 2.5px rgb(158, 147, 147);
-}
+} */
 
-.portfolio-cover {
-  height: 250px;
-}
+/* .portfolio-cover {
+  height: auto;
+} */
 
-.portfolio img {
+/* .portfolio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
-.portfolio-info {
-  padding: 2rem 1.5rem;
+/* .portfolio-info {
+  padding: 1rem 0.5rem;
   
-}
+} */
 
-.portfolio-title {
+/* .portfolio-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-}
+} */
 
-.portfolio h4 {
+/* .portfolio h4 {
   font-weight: 500;
   font-size: 1.05rem;
-}
+} */
 
-.portfolio-title a svg:hover {
+/* .portfolio-title a svg:hover {
   fill: var(--primaryIconColor);
-}
+} */
 
-.portfolio-title a svg {
+/* .portfolio-title a svg {
   transition: 0.2s ease-in-out;
-}
+} */
 
-.portfolio-tags {
+/* .portfolio-tags {
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
-}
+} */
 
-.portfolio-tags div {
+/* .portfolio-tags div {
   font-size: 0.9rem;
   border: 1px solid var(--borderColor);
   padding: 0.4rem 1rem;
   color: var(--secondaryTextColor);
-}
+} */
 
-.portfolio-tags div {
+/* .portfolio-tags div {
   font-size: 0.9rem;
   border: 1px solid var(--borderColor);
   padding: 0.4rem 1rem;
   color: var(--secondaryTextColor);
+} */
+
+#portfolios {
+  padding: 40px 20px;
+  background-color: White;
 }
 
-/* Skills and Education */
-#skills {
-  padding: var(--sectionPadding);
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
   background: var(--primaryBackgroundColor);
+}
+
+.portfolio {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  color: #3e3f40;
+  padding-bottom: 5px;
+  padding-top: 0.4rem;
+}
+
+.project-name {
+  color: black;
+}
+
+.portfolio-cover img {
+  width: 100%;
+  height: 60%;
+  display: block;
+}
+
+.portfolio-info {
+  padding: 16px;
+}
+
+.portfolio-title {
+  display: flex;
+  align-items: center; /* Aligns items vertically at the center */
+  justify-content: space-between; /* Adds space between the heading and the link */
+  gap: 8px; /* Optional spacing between elements */
+}
+
+.portfolio-title h4 {
+  margin: 0; /* Remove default margin for better alignment */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.portfolio-link {
+  display: inline-flex; /* Ensures the SVG aligns properly */
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Ensures the link inherits color */
+}
+
+.portfolio-link svg {
+  fill: #000; /* Default icon color */
+  transition: fill 0.3s ease; /* Adds a hover effect */
+}
+
+.portfolio-link:hover svg {
+  fill: #007bff; /* Change color on hover */
+}
+
+
+.portfolio-tags div {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#education {
+  padding: 2rem 1rem;
+  background-color: white;
+  
+  font-family: 'Arial', sans-serif;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .education {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  
 }
 
-.education .line {
-  padding: 0 0.7rem;
+.logo img {
+  width: 100px; /* Adjust logo size */
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px; /* Optional: Rounded corners */
 }
 
-.education .line div {
-  width: 2px;
-  height: 100%;
-  border: 1px solid var(--borderColor);
-  position: relative;
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
 }
 
-.education-info p {
-  margin: 0.6rem 0 1.4rem;
+.college-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
-.education-years {
-  margin-bottom: 3rem;
+.degree {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.2rem 0;
+  text-align: center; /* Center align the degree text */
 }
 
-/* The dot on the line */
-.education .line div:before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background: var(--borderColor);
-  border-radius: 50%;
-  position: absolute;
-  left: -6px;
+.year {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  text-align: center; /* Center align the year */
+  margin: 0.2rem 0;
 }
 
 /* Right side of Skills */
@@ -372,6 +477,9 @@ nav ul {
   line-height: 2rem;
   padding: 0 1rem;
 }
+
+
+
 
 /* Contact Section */
 #contact {
@@ -534,6 +642,7 @@ footer {
   color: #3e3f40;
   padding-bottom: 5px;
   padding-top: 0px;
+  justify-content: center;
 }
 
 .skills-container {
@@ -542,6 +651,7 @@ footer {
   margin: 1.5rem;
   border: #656d72;
   gap: 25px; 
+  justify-content: center;
 }
 
 .skill {
@@ -666,6 +776,10 @@ footer {
 
   .section-title, .pre-title {
     font-size: 1.5rem; 
+  }
+
+  .education-container {
+    justify-content: center;
   }
 
   .education{
