@@ -261,6 +261,27 @@ nav ul {
 
 /* Portfolio */
 
+.links {
+  display: flex;
+  margin: 0.5rem 1rem;
+}
+
+.live {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.25rem;
+}
+
+a h6.live{
+  display: inline;
+  color: #9d9fa1;
+}
+
+a h6.live:hover {
+  color: black;
+}
+
+
 #portfolios {
   padding: 40px 20px;
   background-color: White;
@@ -271,6 +292,7 @@ nav ul {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
   background: var(--primaryBackgroundColor);
+  text-decoration: none;
 }
 
 .chart {
@@ -341,7 +363,7 @@ nav ul {
 }
 
 .portfolio-link:hover svg {
-  fill: #007bff; /* Change color on hover */
+  fill: #646567; /* Change color on hover */
 }
 
 
@@ -843,5 +865,8 @@ footer {
     padding: 0px 0px;
   }
 }
+
+
+
 
 
