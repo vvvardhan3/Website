@@ -279,7 +279,10 @@ a h6.live{
 
 a h6.live:hover {
   color: black;
+  text-decoration: underline !important;
 }
+
+
 
 
 #portfolios {
