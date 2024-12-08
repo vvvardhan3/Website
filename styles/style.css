@@ -834,6 +834,8 @@ footer {
     width: auto; 
   }
 
+ 
+
   .nav {
     flex-direction: column; 
     padding: 0px 0px; 
@@ -870,6 +872,7 @@ footer {
 }
 
 
-
-
-
+.twitter {
+  height: 450px;
+  width: 450px;
+}
